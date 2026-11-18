@@ -1,0 +1,14 @@
+{
+  "name": "simon-skills",
+  "description": "Simon's personal collection of agent skills.",
+  "owner": {
+    "name": "simongcs"
+  },
+  "plugins": [
+    {
+      "name": "simon-skills",
+      "source": "./",
+      "description": "Bundle: every skill in this repo"
+    }
+  ]
+}
