@@ -1,0 +1,8 @@
+#!/bin/sh
+# Validates skills and regenerates the README index + marketplace.json,
+# then stages them so every commit ships up-to-date generated files.
+# Enable once per clone:  git config core.hooksPath .githooks
+set -e
+
+node scripts/build.ts
+git add README.md .claude-plugin/marketplace.json
