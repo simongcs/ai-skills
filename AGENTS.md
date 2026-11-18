@@ -26,7 +26,23 @@ Generated files: the skill table in `README.md` (between the `skills-index` mark
    cp templates/SKILL.template.md skills/my-skill/SKILL.md
    ```
 3. Edit `skills/my-skill/SKILL.md`. Required frontmatter: `name` (lowercase letters, digits, hyphens) and `description`. Optional: `metadata.category`, used for the index.
-4. Commit. The hook validates the skill and regenerates the README index and `marketplace.json`.
+4. Add a short `skills/my-skill/README.md`: one line on what the skill does, then how to install it:
+   ````markdown
+   ## Install
+
+   With `npx skills`:
+
+   ```bash
+   npx skills add simongcs/ai-skills --skill my-skill
+   ```
+
+   As a Claude Code plugin:
+
+   ```text
+   /plugin install my-skill --marketplace simongcs/ai-skills
+   ```
+   ````
+5. Commit. The hook validates the skill and regenerates the README index and `marketplace.json`.
 
 Run the build manually any time (needs Node 22.18+, no dependencies):
 
