@@ -9,6 +9,14 @@
       "name": "simon-skills",
       "source": "./",
       "description": "Bundle: every skill in this repo"
+    },
+    {
+      "name": "review-tests",
+      "source": "./",
+      "description": "Reviews test code to find brittle, flaky, and superficial tests, and tests that exist only to raise coverage. It checks each test by asking \"would this fail if the code were broken?\", first by reason…",
+      "skills": [
+        "./skills/review-tests"
+      ]
     }
   ]
 }

@@ -5,7 +5,9 @@ My personal collection of [agent skills](https://docs.claude.com/en/docs/claude-
 ## Skills
 
 <!-- skills-index:start -->
-_No skills yet._
+| Skill | Description | Category |
+| --- | --- | --- |
+| [`review-tests`](skills/review-tests) | Reviews test code to find brittle, flaky, and superficial tests, and tests that exist only to raise coverage. It checks each test by asking "would this fail if the code were broken?", first by reason… | testing |
 <!-- skills-index:end -->
 
 ## Install
